@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>짤 &amp; 꿀템 | 매일 올리는 웃긴 짤, 그 사이 끼어든 꿀템</title>
+<meta name="description" content="매일 올리는 웃긴 짤과 그 사이에 끼어든 저평가 꿀템 모음. 쿠팡 파트너스 링크로 바로 확인하세요.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="짤 &amp; 꿀템">
+<meta property="og:description" content="매일 올리는 웃긴 짤, 그 사이에 끼어든 꿀템 모음">
+<meta property="og:image" content="images/hotpack.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="avatar" aria-hidden="true"><span>🛍️</span></div>
+    <h1>짤 &amp; 꿀템</h1>
+    <p class="tagline">매일 올리는 웃긴 짤,<br>그 사이에 끼어든 꿀템 모음</p>
+  </header>
+
+  <div class="searchbar" role="search">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.964 12.05l4.243 4.243-1.414 1.414-4.243-4.243A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z"/></svg>
+    <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="상품 검색 (예: 핫팩, 체중계)" aria-label="상품 검색">
+    <button id="clear" type="button" aria-label="검색어 지우기" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12.01l-6.29-6.3-1.42 1.42 6.3 6.29-6.3 6.29 1.42 1.42 6.29-6.3 6.3 6.3 1.41-1.42-6.29-6.29 6.29-6.3z"/></svg>
+    </button>
+  </div>
+
+  <nav class="chips" id="chips" aria-label="카테고리"></nav>
+
+  <main>
+    <div class="list" id="list">
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+    </div>
+    <p class="state" id="state" hidden></p>
+  </main>
+
+  <footer>
+    <p class="disclosure">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+    <p class="note">표시된 가격은 글을 올린 날 기준이에요. 가격·재고는 수시로 바뀌니 최종 금액은 쿠팡에서 확인해 주세요.</p>
+    <p class="copy">© 2026 짤 &amp; 꿀템</p>
+  </footer>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
