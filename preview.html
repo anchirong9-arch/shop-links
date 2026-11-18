@@ -5,18 +5,27 @@
 <title>mobile preview</title>
 <style>
   html,body{margin:0;background:#eceff3}
-  body{padding:12px;display:flex;justify-content:center;align-items:flex-start}
+  body{padding:14px;display:flex;justify-content:center;align-items:flex-start}
   .frame{
-    width:390px;height:1400px;
-    transform:scale(.77);transform-origin:top center;
+    width:390px;
     border-radius:22px;overflow:hidden;
     box-shadow:0 8px 30px rgba(0,0,0,.18);
-    background:#fff;
+    background:#fbfaf8;
   }
-  iframe{width:390px;height:1400px;border:0;display:block;background:#fbfaf8}
+  iframe{width:390px;height:1000px;border:0;display:block;background:#fbfaf8}
 </style>
 </head>
 <body>
-  <div class="frame"><iframe src="./index.html" title="mobile preview"></iframe></div>
+  <div class="frame" id="frame"><iframe id="pv" src="./index.html" title="mobile preview"></iframe></div>
+<script>
+  const f = document.getElementById('pv');
+  const frame = document.getElementById('frame');
+  f.addEventListener('load', () => {
+    const h = f.contentDocument.documentElement.scrollHeight;
+    f.style.height = h + 'px';
+    const s = Math.min(1, (window.innerHeight - 28) / h);
+    frame.style.zoom = s;
+  });
+</script>
 </body>
 </html>
