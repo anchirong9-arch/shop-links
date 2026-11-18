@@ -19,7 +19,7 @@
 
   function card(p) {
     const off = p.listPrice && p.listPrice > p.price
-      ? '<s>' + won(p.listPrice) + '</s><span class="off">' + Math.round((1 - p.price / p.listPrice) * 100) + '%</span>'
+      ? '<s>' + won(p.listPrice) + '</s><span class="off">' + Math.floor((1 - p.price / p.listPrice) * 100) + '%</span>'
       : '';
     const img = p.image
       ? '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy" decoding="async" width="84" height="84">'
