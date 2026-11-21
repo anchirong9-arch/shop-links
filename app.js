@@ -30,7 +30,7 @@
         '<div class="thumb">' + img + '<span class="no" aria-hidden="true">' + no + '</span></div>' +
         '<div class="body">' +
           (p.tag ? '<span class="tag">' + esc(p.tag) + '</span>' : '') +
-          '<p class="name"><span class="name-no">' + no + '.</span> ' + esc(p.name) + '</p>' +
+          '<p class="name">' + esc(p.name) + '</p>' +
           '<div class="price"><b>' + won(p.price) + '</b>' + off + '</div>' +
         '</div>' +
         '<span class="cta">쿠팡에서 보기' + ARROW + '</span>' +
