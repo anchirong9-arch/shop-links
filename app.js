@@ -18,7 +18,7 @@
   const ARROW = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 11.8 6.7l4.3 4.3H3v2h13.1l-4.3 4.3 1.4 1.4L20 12z"/></svg>';
 
   function card(p, i) {
-    const no = String(i + 1).padStart(2, '0');
+    const no = String(p.no || (products.length - i)).padStart(3, '0');
     const off = p.listPrice && p.listPrice > p.price
       ? '<s>' + won(p.listPrice) + '</s><span class="off">' + Math.floor((1 - p.price / p.listPrice) * 100) + '%</span>'
       : '';
