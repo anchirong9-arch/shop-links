@@ -50,6 +50,34 @@ body{
 .hero h1{margin:0;font-size:21px;font-weight:800;letter-spacing:-.4px}
 .tagline{margin:6px 0 0;font-size:13px;color:var(--sub);line-height:1.5;letter-spacing:-.2px}
 
+/* ── 골드박스 배너 ── */
+.goldbox{
+  display:flex;align-items:center;gap:11px;
+  margin:0 0 12px;padding:12px 13px;
+  background:linear-gradient(135deg,#fff7e6 0%,#ffe8cd 100%);
+  border:1px solid #ffd7a3;
+  border-radius:16px;
+  box-shadow:0 4px 14px rgba(255,150,40,.16);
+  text-decoration:none;color:inherit;
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.goldbox:active{transform:scale(.985);box-shadow:0 2px 8px rgba(255,150,40,.14)}
+.goldbox:hover{border-color:#ffc27a}
+.goldbox-ico{
+  flex:none;width:36px;height:36px;border-radius:12px;
+  display:grid;place-items:center;font-size:18px;line-height:1;
+  background:linear-gradient(140deg,#ffb020 0%,#ff5a3c 100%);
+  box-shadow:0 3px 8px rgba(255,120,40,.3);
+}
+.goldbox-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.goldbox-title{
+  font-size:13.5px;font-weight:800;letter-spacing:-.35px;line-height:1.3;
+  color:#3d2409;
+}
+.goldbox-sub{font-size:11.5px;font-weight:600;letter-spacing:-.2px;color:#a06a30}
+.goldbox-arrow{flex:none;width:15px;height:15px;color:var(--brand)}
+.goldbox-arrow svg{display:block;width:100%;height:100%;fill:currentColor}
+
 /* ── 검색 ── */
 .searchbar{
   position:sticky;top:0;z-index:10;
@@ -192,4 +220,12 @@ footer{margin-top:26px;text-align:center}
   .thumb{background:#22222a}
   .cta{background:#26262f}
   .disclosure{background:#1e1e25;color:#a8a8b4}
+  .goldbox{
+    background:linear-gradient(135deg,#2c2417 0%,#2a1d18 100%);
+    border-color:#4a3a24;
+    box-shadow:0 4px 14px rgba(0,0,0,.35);
+  }
+  .goldbox:hover{border-color:#6b5433}
+  .goldbox-title{color:#ffe6bd}
+  .goldbox-sub{color:#c8a273}
 }
