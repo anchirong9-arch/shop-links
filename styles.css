@@ -69,6 +69,7 @@ body{
   background:linear-gradient(140deg,#ffb020 0%,#ff5a3c 100%);
   box-shadow:0 3px 8px rgba(255,120,40,.3);
 }
+.goldbox-ico svg{display:block;width:19px;height:19px;fill:#fff}
 .goldbox-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
 .goldbox-title{
   font-size:13.5px;font-weight:800;letter-spacing:-.35px;line-height:1.3;
